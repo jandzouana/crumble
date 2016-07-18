@@ -1,6 +1,6 @@
-/** {
-    border: 1px solid red !important;
-}
+/*{
+    border: 1px solid red;
+}*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -8,21 +8,27 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-*/
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-weight: 300;
+  border: solid 2px blue;
+  margin: 0;
 }
 
 .grid {
     margin: 0 auto;
     max-width: 1200px;
-    width: 100%;
+   	width: 100%;
+    background-color: #f0f5f5;
+
+    padding: 0 50px 0 50px;
+
 }
 
 .row {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
 
 	}
@@ -75,29 +81,90 @@ body {
     width: 100%;
 }
 
+#header {
+  margin-top: 10px; !important;
+  padding-top: 10px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+}
 
+#logo img {
+  margin-top: 10px;
+}
 
 #sitetitle {
 	text-align: left;
-	font-size: 100%;
+  width: 50%;
+
+  margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
+/*
+	display: flex;
+	flex-direction: column;
 	justify-content: flex-end;
+  */
+}
+
+#sitetitle h4 {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+	width: 100%;
+}
+
+#sitetitle h1{
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
+	font-size: 150%;
+	width: 100%;
+}
+.menu{
+  margin-right: 25px;
+
+ }
+
+.menu ul {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+ }
+
+.menu ul li{
+  border-right: solid 1px black;
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+
+  font-size: 150%;
 }
 
 .banner {
-	border: 2px solid blue;
-	background-image: url('http://placehold.it/1600x1600');
-  	background-size: cover;
-  	height: 500px;
-  	width: 100%;
-  	text-align: center;
-  	position: relative;
-  	display: inline-block;
+  background-image: url('http://placehold.it/1600x1600');
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+
+    margin: auto;
 
 
 }
 
 .banner h1 {
-	margin: 0;
+  margin-: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,7 +173,6 @@ body {
     font-size: 100px;
 }
 
-
  #gallery_item {
     margin: 10px;
     padding: 10px;
@@ -114,9 +180,14 @@ body {
 
 
  }
+/*makes the image scale to the container*/
+ #gallery_item img{
+ 	  max-width: 100%;
+ }
 
  #gallery{
  	display: flex;
+
  /*	flex-wrap: wrap;
    flex-direction: row;
   align-items: center;
@@ -124,3 +195,60 @@ body {
    */
 
  }
+#footer{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+ #footer h4{
+  margin: auto;
+  padding: auto;
+
+}
+#divisor {
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  height: 20px;
+  max-width: 1200px;
+
+}
+
+ @media all and (max-width: 800px) {
+ 	#gallery{
+
+ 		justify-content: space-around;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		justify-content: center;
+ 	}
+ 	 #gallery_item{
+ 		width: 100%;
+ 	}
+ }
+ @media all and (max-width: 500px) {
+  .menu ul{
+    flex-direction: column;
+  }
+}
+/*
+  @media all and (max-width: 500px) {
+ 	#gallery{
+ 		flex-direction: column;
+ 		align-items: center;
+ 		justify-content: center;
+ 	}
+ 	changes the width of the image to fit whole window and changes orientation from row to column
+ 	#gallery_item{
+ 		width: 100%;
+ 	} */
+ }
+
+ /*TO DO
+  1. center echo
+  2. spread pictures out
+  3. add drop shadow under banner
+  4. Add hover on menu
+  5.
+
+  */
