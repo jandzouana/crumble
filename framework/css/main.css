@@ -1,6 +1,6 @@
-/*{
+*{
     border: 1px solid red;
-}*/
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -14,6 +14,23 @@ body {
   font-weight: 300;
   border: solid 2px blue;
   margin: 0;
+}
+
+h1 {
+  font-family: Pacifico;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  color: pink;
+  line-height: 26.4px;
+}
+
+h3{
+  font-family: Pacifico;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  color: black;
 }
 
 .grid {
@@ -114,6 +131,7 @@ body {
   margin-top: 5px;
   padding: 0;
 	width: 100%;
+  font-size: 150%;
 }
 
 #sitetitle h1{
@@ -121,7 +139,7 @@ body {
   margin-left: 0;
   margin-bottom: 0;
   padding: 0;
-	font-size: 150%;
+	font-size: 250%;
 	width: 100%;
 }
 .menu{
@@ -141,7 +159,6 @@ body {
  }
 
 .menu ul li{
-  border-right: solid 1px black;
   list-style: none;
   flex-grow: 1;
   text-align: center;
@@ -163,7 +180,7 @@ body {
 
 }
 
-.banner h1 {
+.banner h2 {
   margin-: 0;
     position: absolute;
     top: 50%;
@@ -177,12 +194,23 @@ body {
     margin: 10px;
     padding: 10px;
     text-align: center;
+ }
 
-
+ #gallery_item h3 {
+  margin: 0;
+  padding: 0;
+  color: #2D8BE8;
+  font-size: 200%;
  }
 /*makes the image scale to the container*/
  #gallery_item img{
- 	  max-width: 100%;
+  margin: 0;
+  padding: 0;
+ 	max-width: 100%;
+ }
+ #gallery_item p {
+  margin: 0;
+  padding: 0;
  }
 
  #gallery{
