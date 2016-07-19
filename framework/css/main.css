@@ -36,8 +36,6 @@ h3{
   color: black;
 }
 
-#menu {
-}
 
 .grid {
     margin: 0 auto;
@@ -114,8 +112,10 @@ h3{
 }
 
 #logo img {
-  margin-top: 22px;
+  margin-top: 32px;
   border-radius: 50%;
+  width: 65px;
+  height: 65px;
 }
 
 #sitetitle {
@@ -125,7 +125,7 @@ h3{
   margin: 0;
   padding: 0;
 
-  margin-left: 10px;
+  margin-left: 15px;
 /*
 	display: flex;
 	flex-direction: column;
@@ -180,8 +180,21 @@ h3{
   font-family: 'Poiret One', cursive;
 }
 
+.menu ul li a{
+  text-decoration: none;
+  color: #660018;
+
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+
+
+
 .banner {
-  background-image: url('http://placehold.it/1600x1600');
+  background-image: url(choccook2.jpg);
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -190,8 +203,7 @@ h3{
     display: inline-block;
 
     margin: auto;
-
-
+    margin-top: 40px;
 }
 
  #innerban {
@@ -268,6 +280,18 @@ h3{
   color: #660018;
   font-size: 200%;
  }
+
+ .squiggly {
+  height: 30px;
+  width: 100%;
+  background-image: url(squiggly.png);
+  margin: auto;
+  padding: auto;
+  margin-bottom: 20px;
+  background-position: 50% 0%;
+  background-size: 175px 40px;
+  background-repeat: no-repeat;
+ }
 /*makes the image scale to the container*/
  #gallery_item img{
   margin: 0;
@@ -275,6 +299,8 @@ h3{
  	max-width: 100%;
   border-radius: 50%;
   margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
  }
  #gallery_item p {
   margin: 0;
