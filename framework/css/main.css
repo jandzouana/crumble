@@ -16,6 +16,10 @@ body {
   border: solid 2px blue;
   margin: 0;
   padding: 0;
+  background-image: url(background.jpg);
+  background-position: 0% 0%;
+  background-size: 100% 2500px;
+  background-repeat: repeat-x;
 }
 
 h1 {
@@ -238,12 +242,15 @@ h3{
   font-weight: 100;
   margin: auto;
   padding: auto;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
-#innerban h3 {
+#innerban a {
   color: #660018;
-  font-size: 80%;
+  font-size: 100%;
+  font-family: Pacifico;
+  text-decoration: none;
+  margin-top: 5px;
 }
 
 #innerban p {
@@ -251,11 +258,13 @@ h3{
   margin: auto;
   padding: auto;
   font-family: Calibri;
+  margin-top: 15px;
 }
 #services {
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 65px;
 }
 
 #services h3 {
@@ -295,7 +304,7 @@ h3{
 #test{
   display: flex;
   flex-direction: row;
-
+  margin-top: 20px;
 }
  #test img{
   width: 200px;
@@ -311,6 +320,11 @@ h3{
   font-family: Pacifico;
   font-size: 150%;
   color: #732F2C;
+  margin-top: 15px;
+ }
+
+ #test a:hover{
+  color: pink;
  }
 
  #test > div{
