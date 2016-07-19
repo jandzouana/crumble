@@ -1,7 +1,6 @@
 /*{
     border: 1px solid red;
 }*/
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -41,8 +40,7 @@ h3{
     margin: 0 auto;
     max-width: 1200px;
    	width: 100%;
-    background-color: #f0f5f5;
-
+    /*background-color: #f0f5f5;*/
     padding: 0 50px 0 50px;
 
 }
@@ -135,13 +133,13 @@ h3{
 
 #sitetitle h4 {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 6px;
   padding: 0;
 	width: 100%;
   font-size: 150%;
-  font-family: 'Poiret One', cursive;
-  color: #660018;
+  font-family: Pacifico;
+  color: #732F2C;
   font-weight: 100;
 
 }
@@ -256,7 +254,8 @@ h3{
 }
 #services {
   text-align: center;
-  border-bottom: dotted 5px pink;
+  display: flex;
+  flex-direction: column;
 }
 
 #services h3 {
@@ -268,20 +267,60 @@ h3{
     font-size: 200%;
 }
 
- #gallery_item {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
+#services h2 {
+    margin: auto;
+    padding: auto;
+    color: #ff668c;
+    font-size: 150%;
+    font-family: Pacifico;
+    color: #732F2C;
+    font-weight: 100;
+}
+
+#service_div{
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  background-image: url(services_div2.png);
+  background-position: center;
+  background-size: 300px 40px;
+  background-repeat: no-repeat;
+}
+
+/*makes the image scale to the container*/
+
+}
+
+
+#test{
+  display: flex;
+  flex-direction: row;
+
+}
+ #test img{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding: auto;
+  border-radius: 50%;
+ }
+ #test a{
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+  font-family: Pacifico;
+  font-size: 150%;
+  color: #732F2C;
  }
 
- #gallery_item h3 {
-  margin: 0;
-  padding: 0;
-  color: #660018;
-  font-size: 200%;
+ #test > div{
+  margin: auto;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
  }
-
- .squiggly {
+#test div div {
   height: 30px;
   width: 100%;
   background-image: url(squiggly.png);
@@ -291,31 +330,12 @@ h3{
   background-position: 50% 0%;
   background-size: 175px 40px;
   background-repeat: no-repeat;
- }
-/*makes the image scale to the container*/
- #gallery_item img{
-  margin: 0;
-  padding: 0;
- 	max-width: 100%;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  width: 200px;
-  height: 200px;
- }
- #gallery_item p {
-  margin: 0;
-  padding: 0;
- }
-
- #gallery{
- 	display: flex;
-
- /*	flex-wrap: wrap;
-   flex-direction: row;
-  align-items: center;
-   justify-content: center;
-   */
-
+}
+ #test p {
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  text-align: center;
  }
 #footer{
   max-width: 1200px;
@@ -345,7 +365,7 @@ h3{
  		align-items: center;
  		justify-content: center;
  	}
- 	 #gallery_item{
+ 	 #gal_item{
  		width: 100%;
  	}
  }
