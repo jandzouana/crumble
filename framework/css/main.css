@@ -1,6 +1,6 @@
-*{
+/*{
     border: 1px solid red;
-}
+}*/
 
  {
     -webkit-box-sizing: border-box;
@@ -363,25 +363,25 @@ h3{
   padding: 0;
   width: 100%;
   height: 200px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #footer {
   max-width: 1200px;
   padding: 10px 50px 10px 50px;
   margin: auto;
-  height: 100%;
+  height: 80%;
   display: flex;
-  flex-direction: row;
-
+  flex-direction: row
+  top: 10px;
 }
 
 #social {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   justify-content: space-around;
-  margin: auto;
 }
 
 #social ul{
@@ -406,6 +406,8 @@ h3{
   margin-top: 0;
   margin-bottom: 0;
   padding: auto;
+  padding-left: 9px;
+
 }
 
 #social h2 {
@@ -413,25 +415,32 @@ h3{
   margin-top: 0;
   margin-bottom: 0;
   padding: auto;
+  font-family: Pacifico;
+  font-weight: 100;
+  padding-left: 9px;
 }
 
 #menu2 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 #menu2 ul{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+
 }
 
 #menu2 ul li{
-  flex-grow: 1;
   list-style: none;
   text-align: center;
   color: #660018;
   font-size: 150%;
   font-weight: 800;
   font-family: 'Poiret One', cursive;
+  padding-left: 30px;
+  margin-top: 14px;
 }
 
 #menu2 ul li a{
