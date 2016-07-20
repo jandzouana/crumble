@@ -168,18 +168,18 @@ h3{
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-end;
 
  }
 
 .menu ul li{
   list-style: none;
-  flex-grow: 1;
   text-align: center;
   color: #660018;
   font-size: 150%;
   font-weight: 800;
   font-family: 'Poiret One', cursive;
+  padding-left: 20px;
 }
 
 .menu ul li a{
@@ -387,13 +387,14 @@ h3{
 #social ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
 
 }
 
 #social ul li {
+  margin-right: 10px;
   list-style: none;
 }
 #social ul li img{
@@ -420,6 +421,15 @@ h3{
   padding-left: 9px;
 }
 
+#social > a{
+  color: white;
+  margin-left: 9px;
+  text-decoration: none;
+}
+
+#social > a:hover{
+  color: #90d3d2;
+}
 #menu2 {
   margin-top: 0px;
 }
@@ -446,6 +456,10 @@ h3{
 #menu2 ul li a{
   text-decoration: none;
   color: white;
+}
+
+#menu2 ul li a:hover{
+  color: #90d3d2;
 }
 #copy p{
   margin: auto;
@@ -484,10 +498,8 @@ h3{
  }
 
  /*TO DO
-  1. add white circle around gallery items (maybe dashed)
-  2. bring menu down?
   3. fix dashes
-  4. make chef hat bigger?
-  5. footer
+  5.  Add crumble log bottom left
+  6. copyright sign
 
   */
