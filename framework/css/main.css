@@ -13,7 +13,6 @@ body {
 
 
   font-weight: 300;
-  border: solid 2px blue;
   margin: 0;
   padding: 0;
   background-image: url(background.jpg);
@@ -105,7 +104,7 @@ h3{
 }
 
 #header {
-  margin-top: 10px; !important;
+  margin-top: 20px; !important;
   padding-top: 10px;
 }
 #logo {
@@ -157,7 +156,7 @@ h3{
 	width: 100%;
 }
 .menu{
-  margin-top: 100px;
+  margin-top: 40px;
 
  }
 
@@ -253,6 +252,10 @@ h3{
   margin-top: 5px;
 }
 
+#innerban a:hover {
+  color: #c09759;
+}
+
 #innerban p {
   color:#660018;
   margin: auto;
@@ -292,7 +295,7 @@ h3{
   height: 50px;
   background-image: url(services_div2.png);
   background-position: center;
-  background-size: 300px 40px;
+  background-size: 320px 40px;
   background-repeat: no-repeat;
 }
 
@@ -372,14 +375,14 @@ h3{
 }
 
  @media all and (max-width: 800px) {
- 	#gallery{
+ 	#test{
 
  		justify-content: space-around;
  		flex-direction: column;
  		align-items: center;
  		justify-content: center;
  	}
- 	 #gal_item{
+ 	 #test div{
  		width: 100%;
  	}
  }
@@ -402,10 +405,10 @@ h3{
  }
 
  /*TO DO
-  1. center echo
-  2. spread pictures out
-  3. add drop shadow under banner
-  4. Add hover on menu
-  5.
+  1. add white circle around gallery items (maybe dashed)
+  2. bring menu down?
+  3. fix dashes
+  4. make chef hat bigger?
+  5. footer
 
   */
