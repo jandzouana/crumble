@@ -387,6 +387,7 @@ h3{
 #social ul{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 
@@ -394,8 +395,6 @@ h3{
 
 #social ul li {
   list-style: none;
-  flex-grow: 1;
-  margin: auto;
 }
 #social ul li img{
   margin: auto;
@@ -416,6 +415,10 @@ h3{
   padding: auto;
 }
 
+#menu2 {
+  margin-top: 20px;
+}
+
 #menu2 ul{
   display: flex;
   flex-direction: row;
@@ -424,11 +427,16 @@ h3{
 #menu2 ul li{
   flex-grow: 1;
   list-style: none;
+  text-align: center;
+  color: #660018;
+  font-size: 150%;
+  font-weight: 800;
+  font-family: 'Poiret One', cursive;
 }
 
-#menu ul li a{
+#menu2 ul li a{
   text-decoration: none;
-
+  color: white;
 }
 #copy p{
   margin: auto;
