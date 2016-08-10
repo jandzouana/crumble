@@ -115,7 +115,6 @@ h3{
 
 #logo img {
   margin-top: 32px;
-  border-radius: 50%;
   width: 65px;
   height: 65px;
 }
@@ -197,52 +196,57 @@ h3{
 
 .banner {
   background-image: url(choccook2.jpg);
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    display: inline-block;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin: auto;
-    margin-top: 40px;
+  margin: auto;
+  margin-top: 40px;
 }
 
  #innerban {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-
   background-color: beige;
-  margin: 0px 5px 0px 5px;
-  padding: 5px;
 
   opacity: 0.70;
   border-radius: 2%;
-
   width: 500px;
   height: 235px;
+  padding: 5px;
+  padding-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #innerban div {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  border: dashed 3px #660018;
+  border: dashed 1px brown;
   border-radius: 2%;
+  width: 95%;
+  height: 95%;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #innerban h2{
   font-family: Pacifico;
   font-size: 150%;
   color: #660018;
   font-weight: 100;
-  margin: auto;
-  padding: auto;
-  margin-top: 7px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #innerban a {
@@ -250,20 +254,20 @@ h3{
   font-size: 100%;
   font-family: Pacifico;
   text-decoration: none;
-  margin-top: 5px;
-}
-
-#innerban a:hover {
-  color: #c09759;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
 }
 
 #innerban p {
   color:#660018;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
   font-family: Calibri;
-  margin-top: 15px;
+  padding: 0px 10px 0px 10px;
 }
+
+
 #services {
   text-align: center;
   display: flex;
@@ -362,7 +366,7 @@ h3{
   margin-top: 100px;
   padding: 0;
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -413,12 +417,11 @@ h3{
 
 #social h2 {
   color: white;
-  margin-top: 0;
   margin-bottom: 0;
   padding: auto;
   font-family: Pacifico;
   font-weight: 100;
-  padding-left: 9px;
+  padding-left: 8px;
 }
 
 #social > a{
@@ -439,7 +442,7 @@ h3{
   flex-direction: row;
   justify-content: flex-end;
   margin: 0;
-
+  padding: 0;
 }
 
 #menu2 ul li{
@@ -460,6 +463,18 @@ h3{
 
 #menu2 ul li a:hover{
   color: #90d3d2;
+}
+
+#left_foot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#left_foot img{
+  width: 120px;
+  height: 120px;
 }
 #copy p{
   margin: auto;
